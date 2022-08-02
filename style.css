@@ -1,52 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
-html {
-  box-sizing: border-box;
-}
+
 body {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-weight: 400;
   font-size: 18px;
-  /* flex-direction: column; */
-  justify-content: center;
-  align-items: center;
-  position: relative;
 }
+
 #header-nav {
   background-color: yellowgreen;
 }
-h1 {
+.h1-o {
   font-size: 36px;
   font-weight: 700;
-  text-align: center;
   margin-top: 30px;
-  margin-bottom: -30px;
-}
-
-.meal-container {
-  margin-top: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /* flex-direction: row; */
-  margin: 40px;
-}
-
-.meal {
-  background-color: rgb(161, 156, 156);
-  height: 700px;
-  border: #000 solid 4px;
-  margin: 20px;
-  flex: 1;
-  overflow: hidden;
-}
-
-p {
-  padding: 10px;
 }
 
 .beef,
 .chx,
 .sushi {
+  margin-top: 10px;
+  margin-bottom: -10px;
   font-weight: 700;
   font-size: 22px;
+}
+
+.row {
+  margin-bottom: 15px;
+}
+
+.row > div {
+  border: 20px solid white;
+  height: 700px;
+  background-color: gray;
+  position: relative;
+}
+
+.row > div ::before {
+  content: '';
+  background: none;
+  border: 5px solid #000;
+
+  display: block;
+  position: absolute;
+  top: 0.5px;
+  left: 0.5px;
+  right: 0.5px;
+  bottom: 0.5px;
+}
+
+.tb {
+  padding: 20px;
 }
